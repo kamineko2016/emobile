@@ -22,15 +22,15 @@ POST: /emobile/api.php
 
 **Data constraints**
 
-```json
+```
 {
     "method": "new_travel",
-	"longitude": float,
-	"latitude": float,
-	"distance": float,
-	"user": byte64,
-	"driver": byte64,
-	"contract": byte64,
+    "longitude": float,
+    "latitude": float,
+    "distance": float,
+    "user": byte64,
+    "driver": byte64,
+    "contract": byte64,
 }
 ```
 
@@ -39,12 +39,12 @@ POST: /emobile/api.php
 ```json
 {
     "method": "new_travel", //指定方法為新增新增一筆搭乘記錄
-	"longitude": 121.525, //經度
-	"latitude": 25.0392, //緯度
-	"distance": 1.234, //本次搭乘里程數
-	"user": "0x0100000000000000000000000000000000000001", //乘客錢包地址
-	"driver": "0x0000000000000000000000000000000000000001", //司機錢包地址
-	"contract": "0x0000000000000000000000000000000000000002", //emobile合約地址
+    "longitude": 121.525, //經度
+    "latitude": 25.0392, //緯度
+    "distance": 1.234, //本次搭乘里程數
+    "user": "0x0100000000000000000000000000000000000001", //乘客錢包地址
+    "driver": "0x0000000000000000000000000000000000000001", //司機錢包地址
+    "contract": "0x0000000000000000000000000000000000000002", //emobile合約地址
 }
 ```
 
@@ -57,7 +57,7 @@ POST: /emobile/api.php
 ```json
 {
     "result": true,
-	"message": "success",
+    "message": "success",
 }
 ```
 
@@ -70,7 +70,7 @@ POST: /emobile/api.php
 ```json
 {
     "result": false,
-	"message": "no_method",
+    "message": "no_method",
 }
 ```
 
@@ -81,7 +81,7 @@ POST: /emobile/api.php
 ```json
 {
     "result": false,
-	"message": "invalid_method",
+    "message": "invalid_method",
 }
 ```
 
@@ -92,7 +92,7 @@ POST: /emobile/api.php
 ```json
 {
     "result": false,
-	"message": "missing_data",
+    "message": "missing_data",
 }
 ```
 
@@ -103,6 +103,6 @@ POST: /emobile/api.php
 ```json
 {
     "result": false,
-	"message": "invalid_address",
+    "message": "invalid_address",
 }
 ```
