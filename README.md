@@ -31,6 +31,7 @@ POST: /emobile/api.php
     "user": byte64,
     "driver": byte64,
     "contract": byte64,
+    "credit": int,
 }
 ```
 
@@ -45,6 +46,7 @@ POST: /emobile/api.php
     "user": "0x0100000000000000000000000000000000000001", //乘客錢包地址
     "driver": "0x0000000000000000000000000000000000000001", //司機錢包地址
     "contract": "0x0000000000000000000000000000000000000002", //emobile合約地址
+    "credit": 1, //本次乘客給的評價
 }
 ```
 
@@ -158,6 +160,7 @@ POST: /emobile/api.php
             "longitude": "121.525", //經度(注意拿到的資料型態是字串)
             "latitude": "25.0392", //緯度(注意拿到的資料型態是字串)
             "distance": "1.234", //本筆搭乘里程數(注意拿到的資料型態是字串)
+            "credit": "1", //本次乘客給的評價(注意拿到的資料型態是字串)
         },
         {
             "id": "2",
@@ -167,6 +170,7 @@ POST: /emobile/api.php
             "longitude": "121.525",
             "latitude": "25.0392",
             "distance": "1.234",
+            "credit": "0",
         },
     ],
 }
@@ -269,6 +273,7 @@ POST: /emobile/api.php
             "longitude": "121.525", //經度(注意拿到的資料型態是字串)
             "latitude": "25.0392", //緯度(注意拿到的資料型態是字串)
             "distance": "1.234", //本筆搭乘里程數(注意拿到的資料型態是字串)
+            "credit": "1", //本次乘客給的評價(注意拿到的資料型態是字串)
         },
         {
             "id": "2",
@@ -278,6 +283,7 @@ POST: /emobile/api.php
             "longitude": "121.525",
             "latitude": "25.0392",
             "distance": "1.234",
+            "credit": "0",
         },
     ],
 }
